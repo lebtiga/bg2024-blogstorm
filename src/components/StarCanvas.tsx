@@ -31,8 +31,8 @@ export const StarCanvas: React.FC = () => {
         stars.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          size: Math.random() * 2,
-          speed: Math.random() * 3 + 1
+          size: Math.random() * 1.5, // Slightly smaller stars
+          speed: Math.random() * 0.5 + 0.1 // Reduced speed range (0.1 to 0.6)
         });
       }
     };
@@ -43,7 +43,7 @@ export const StarCanvas: React.FC = () => {
       stars.forEach(star => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.5})`;
+        ctx.fillStyle = `rgba(255, 255, 255, ${Math.random() * 0.3 + 0.7})`; // Adjusted opacity
         ctx.fill();
 
         star.y += star.speed;

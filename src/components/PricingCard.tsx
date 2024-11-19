@@ -58,14 +58,14 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
       >
         {/* Popular Badge */}
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-          <div className="bg-gradient-to-r from-purple-600 to-pink-400 text-white px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2">
+          <div className="bg-gradient-to-r from-purple-600 to-pink-400 text-white px-6 py-2 rounded-full text-sm font-medium flex items-center gap-2 shadow-lg">
             <Sparkles className="w-4 h-4" />
             LIMITED TIME OFFER - 100 FOUNDERS ONLY
             <Sparkles className="w-4 h-4" />
           </div>
         </div>
 
-        <div className="glass-card rounded-3xl border border-emerald-500/30 backdrop-blur-xl relative overflow-hidden">
+        <div className="glass-card rounded-3xl border border-emerald-500/30 backdrop-blur-xl relative overflow-hidden bg-black/40">
           {/* Gradient Orbs */}
           <div className="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/20 rounded-full blur-3xl" />
           <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-purple-500/20 rounded-full blur-3xl" />
@@ -74,8 +74,8 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
             {/* Left Column - Features */}
             <div>
               <div className="text-center md:text-left mb-8">
-                <h3 className="text-3xl font-bold mb-2">Founder's Lifetime Access</h3>
-                <p className="text-gray-400">Join our exclusive founding members club</p>
+                <h3 className="text-3xl font-bold mb-2 text-white">Founder's Lifetime Access</h3>
+                <p className="text-gray-300">Join our exclusive founding members club</p>
               </div>
 
               <div className="space-y-4">
@@ -91,8 +91,8 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
                       <Check className="w-4 h-4 text-emerald-400" />
                     </div>
                     <div>
-                      <div className="font-medium">{feature.title}</div>
-                      <div className="text-sm text-gray-400">{feature.description}</div>
+                      <div className="font-medium text-white">{feature.title}</div>
+                      <div className="text-sm text-gray-300">{feature.description}</div>
                     </div>
                   </motion.div>
                 ))}
@@ -102,16 +102,16 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
             {/* Right Column - Pricing & Stats */}
             <div className="flex flex-col">
               {/* Price Box */}
-              <div className="glass-card rounded-2xl p-6 mb-6 text-center">
+              <div className="glass-card rounded-2xl p-6 mb-6 text-center bg-black/60 border border-emerald-500/30">
                 <div className="flex items-center justify-center gap-4 mb-4">
-                  <div className="text-5xl font-bold">$500</div>
+                  <div className="text-5xl font-bold text-white">$500</div>
                   <div className="text-left">
                     <div className="text-lg text-gray-400 line-through">$3,480/year</div>
                     <div className="text-lg text-emerald-400 font-medium">Save 85%</div>
                   </div>
                 </div>
-                <div className="text-gray-400 mb-6">One-time payment, lifetime access!</div>
-                <button className="w-full py-4 px-8 bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-black font-bold rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                <div className="text-gray-300 mb-6">One-time payment, lifetime access!</div>
+                <button className="w-full py-4 px-8 bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-black font-bold rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg">
                   <Rocket className="w-5 h-5" />
                   Launch with Us Now
                   <Rocket className="w-5 h-5" />
@@ -119,10 +119,10 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
               </div>
 
               {/* Speed Bonuses */}
-              <div className="glass-card rounded-2xl p-6 mb-6">
+              <div className="glass-card rounded-2xl p-6 mb-6 bg-black/60 border border-purple-500/30">
                 <div className="flex items-center gap-2 mb-4">
                   <Zap className="w-5 h-5 text-purple-400" />
-                  <h4 className="font-bold">Speed Bonuses</h4>
+                  <h4 className="font-bold text-white">Speed Bonuses</h4>
                 </div>
                 <div className="space-y-3">
                   {speedBonuses.map((bonus, index) => (
@@ -131,7 +131,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
                         <div className="w-4 h-4 rounded-full bg-purple-500/20 flex items-center justify-center">
                           <Gift className="w-3 h-3 text-purple-400" />
                         </div>
-                        <span>{bonus.range} Founders:</span>
+                        <span className="text-gray-300">{bonus.range} Founders:</span>
                       </div>
                       <span className="text-purple-400">
                         {bonus.credits} credits (${bonus.value} value)
@@ -143,20 +143,20 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
 
               {/* Stats Grid */}
               <div className="grid grid-cols-3 gap-4">
-                <div className="text-center p-4 glass-card rounded-xl">
+                <div className="text-center p-4 glass-card rounded-xl bg-black/60 border border-emerald-500/20">
                   <Users className="w-6 h-6 text-emerald-400 mx-auto mb-2" />
-                  <div className="text-2xl font-bold">{currentFounders}/100</div>
-                  <div className="text-sm text-gray-400">Founders</div>
+                  <div className="text-2xl font-bold text-white">{currentFounders}/100</div>
+                  <div className="text-sm text-gray-300">Founders</div>
                 </div>
-                <div className="text-center p-4 glass-card rounded-xl">
+                <div className="text-center p-4 glass-card rounded-xl bg-black/60 border border-purple-500/20">
                   <Gift className="w-6 h-6 text-purple-400 mx-auto mb-2" />
-                  <div className="text-2xl font-bold">$3,000+</div>
-                  <div className="text-sm text-gray-400">Prize Pool</div>
+                  <div className="text-2xl font-bold text-white">$3,000+</div>
+                  <div className="text-sm text-gray-300">Prize Pool</div>
                 </div>
-                <div className="text-center p-4 glass-card rounded-xl">
+                <div className="text-center p-4 glass-card rounded-xl bg-black/60 border border-emerald-500/20">
                   <Star className="w-6 h-6 text-emerald-400 mx-auto mb-2" />
-                  <div className="text-2xl font-bold">4</div>
-                  <div className="text-sm text-gray-400">Milestones</div>
+                  <div className="text-2xl font-bold text-white">4</div>
+                  <div className="text-sm text-gray-300">Milestones</div>
                 </div>
               </div>
             </div>

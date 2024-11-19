@@ -45,16 +45,11 @@ export const AnimatedFooter = () => {
     <footer className="container mx-auto px-4 py-8 mt-16 border-t border-white/10">
       <div className="flex flex-col items-center gap-4">
         <div className="flex items-center gap-2 text-sm">
-          <span className="text-red-500">Built</span>
-          <span className="text-white">with</span>
+          <span>Built</span>
+          <span>with</span>
           <Heart className="w-4 h-4 text-red-500 animate-pulse" />
-          <span className="text-blue-500">in</span>
-          <div className="relative">
-            <span className="bg-gradient-to-r from-red-500 via-white to-blue-500 bg-clip-text text-transparent font-bold">
-              America
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-white/20 to-blue-500/20 blur-sm -z-10"></div>
-          </div>
+          <span>in</span>
+          <span className="font-medium">Chicago 🇺🇸</span>
         </div>
         
         <div className="h-6 text-sm text-gray-400">

@@ -4,6 +4,7 @@ import { LaunchBackground } from './components/LaunchBackground';
 import { AnimatedFooter } from './components/AnimatedFooter';
 import { VideoModal } from './components/VideoModal';
 import { CountdownTimer } from './components/CountdownTimer';
+import { SuccessVision } from './components/SuccessVision';
 
 function App() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -198,6 +199,9 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* Success Vision */}
+          <SuccessVision />
 
           {/* Final CTA */}
           <div className="text-center animate-pulse-slow">

@@ -71,25 +71,27 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
   ];
 
   return (
-    <div className="glass-card rounded-2xl p-8 mb-16">
+    <div className="glass-card rounded-2xl p-8 mb-16 bg-black/40">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-3">
           <Trophy className="w-8 h-8 text-emerald-400" />
           <div>
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text text-transparent">
-              Prize Draw Pool
+            <h2 className="text-3xl font-bold">
+              <span className="bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text text-transparent px-1 py-0.5 rounded backdrop-blur-sm bg-black/40">
+                Prize Draw Pool
+              </span>
             </h2>
-            <p className="text-gray-400">Total Prize Pool Value: $3,000+ (One Winner Per Milestone)</p>
+            <p className="text-white">Total Prize Pool Value: $3,000+ (One Winner Per Milestone)</p>
           </div>
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold text-emerald-400">{currentFounders}/100</div>
-          <div className="text-sm text-gray-400">Founders Joined</div>
+          <div className="text-sm text-white">Founders Joined</div>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div className="relative h-2 mb-12 bg-gray-800/50 rounded-full overflow-hidden">
+      <div className="relative h-2 mb-12 bg-black/60 rounded-full overflow-hidden">
         <motion.div 
           className="absolute inset-y-0 left-0 bg-gradient-to-r from-emerald-400 to-purple-400 rounded-full"
           initial={{ width: 0 }}
@@ -131,9 +133,9 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
             >
               {/* Card */}
               <div className={`glass-card rounded-xl transition-all duration-300 ${
-                isUnlocked ? 'border-emerald-500/50 bg-emerald-500/5' : 
-                isNext ? 'border-purple-500/50 bg-purple-500/5' : 
-                'border-gray-800 bg-black/50'
+                isUnlocked ? 'border-emerald-500/50 bg-black/60' : 
+                isNext ? 'border-purple-500/50 bg-black/60' : 
+                'border-gray-800 bg-black/60'
               }`}>
                 {/* Lock Badge */}
                 <div className={`absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center ${
@@ -149,16 +151,16 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                 {/* Header */}
                 <div className="p-4 border-b border-gray-800">
                   <div className="flex items-center justify-between mb-2">
-                    <div className="text-lg font-bold">{milestone.count} Founders</div>
+                    <div className="text-lg font-bold text-white">{milestone.count} Founders</div>
                     <div className={`text-sm ${
                       isUnlocked ? 'text-emerald-400' :
                       isNext ? 'text-purple-400' :
-                      'text-gray-400'
+                      'text-gray-300'
                     }`}>
                       {milestone.status}
                     </div>
                   </div>
-                  <div className="text-sm text-gray-400">{milestone.title}</div>
+                  <div className="text-sm text-gray-300">{milestone.title}</div>
                 </div>
 
                 {/* Prize Content */}
@@ -178,17 +180,17 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                     <div className="flex-1">
                       <div className="flex items-start justify-between mb-2">
                         <div>
-                          <div className="font-bold">{milestone.prize.name}</div>
+                          <div className="font-bold text-white">{milestone.prize.name}</div>
                           <div className="text-sm text-emerald-400">Value: {milestone.prize.value}</div>
                         </div>
                         <Gift className={`w-5 h-5 ${
                           isUnlocked ? 'text-emerald-400' : 'text-gray-600'
                         }`} />
                       </div>
-                      <div className="text-sm text-gray-400">
+                      <div className="text-sm text-gray-300">
                         + {milestone.bonus.name} ({milestone.bonus.value} value)
                       </div>
-                      <div className="text-xs text-purple-400 mt-2">
+                      <div className="text-xs text-purple-400 mt-2 bg-purple-500/10 px-2 py-1 rounded-full inline-block">
                         One lucky founder will win the main prize!
                       </div>
                     </div>

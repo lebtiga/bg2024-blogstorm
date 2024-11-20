@@ -15,7 +15,6 @@ import { SatisfactionGuarantee } from './components/SatisfactionGuarantee';
 function App() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [currentFounders] = useState(23);
-  const [viewersCount] = useState(3);
   const [lastClaimMinutes] = useState(2);
 
   return (
@@ -83,7 +82,6 @@ function App() {
           <MilestoneTracker currentFounders={currentFounders} />
 
           <SocialProof 
-            viewersCount={viewersCount}
             lastClaimMinutes={lastClaimMinutes}
             currentFounders={currentFounders}
           />

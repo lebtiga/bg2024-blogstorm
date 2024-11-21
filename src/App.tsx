@@ -22,7 +22,7 @@ function App() {
       <LaunchBackground />
       
       <VideoModal
-        videoId="your-video-id-here"
+        videoId="ydBOgrgkac8"
         isOpen={isVideoOpen}
         onClose={() => setIsVideoOpen(false)}
       />
@@ -61,23 +61,32 @@ function App() {
             </p>
           </div>
 
+          <div className="flex items-center justify-center gap-4 mb-16">
+            <button
+              onClick={() => setIsVideoOpen(true)}
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 rounded-2xl transition-all duration-500 transform hover:scale-105 shadow-[0_0_30px_rgba(52,211,153,0.3)] hover:shadow-[0_0_50px_rgba(52,211,153,0.5)]"
+            >
+              {/* Glow effect */}
+              <div className="absolute inset-0 rounded-2xl bg-emerald-400 blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+              
+              {/* Button content */}
+              <div className="relative flex items-center gap-3">
+                <div className="w-12 h-12 flex items-center justify-center bg-black/30 rounded-xl">
+                  <Play className="w-6 h-6 text-black fill-current" />
+                </div>
+                <span className="text-xl font-bold text-black">Watch Demo Video</span>
+              </div>
+              
+              {/* Animated border */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-emerald-300/50 animate-pulse"></div>
+            </button>
+          </div>
+
           <CountdownTimer />
           
           <FoundersDescription />
           
           <PricingCard currentFounders={currentFounders} />
-
-          <div className="flex items-center justify-center gap-4 mb-16">
-            <button
-              onClick={() => setIsVideoOpen(true)}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 group"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-500 rounded-full">
-                <Play className="w-6 h-6 text-black fill-current" />
-              </div>
-              <span className="text-lg font-medium">Watch How It Works</span>
-            </button>
-          </div>
 
           <MilestoneTracker currentFounders={currentFounders} />
 

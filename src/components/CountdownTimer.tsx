@@ -11,7 +11,7 @@ export const CountdownTimer: React.FC = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = new Date('2024-11-29T23:59:59').getTime() - new Date().getTime();
+      const difference = new Date('2024-12-01T23:59:59').getTime() - new Date().getTime();
       
       if (difference > 0) {
         setTimeLeft({

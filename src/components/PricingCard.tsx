@@ -44,8 +44,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
 
   const speedBonuses = [
     { range: "First 10", credits: 1000, value: 300 },
-    { range: "11-25", credits: 500, value: 150 },
-    { range: "26-50", credits: 250, value: 75 }
+    { range: "11-25", credits: 500, value: 150 }
   ];
 
   return (
@@ -54,14 +53,14 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="relative pt-8 sm:pt-0"
+        className="relative pt-16 sm:pt-0"
       >
         {/* Popular Badge */}
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-full sm:w-auto px-4 sm:px-0">
-          <div className="bg-gradient-to-r from-purple-600 to-pink-400 text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium flex items-center justify-center gap-2 shadow-lg whitespace-nowrap mx-auto sm:mx-0">
-            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+          <div className="bg-gradient-to-r from-purple-600 to-pink-400 text-white px-6 py-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 shadow-lg whitespace-nowrap">
+            <Sparkles className="w-4 h-4" />
             LIMITED TIME OFFER - 100 FOUNDERS ONLY
-            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
+            <Sparkles className="w-4 h-4" />
           </div>
         </div>
 
@@ -111,16 +110,21 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
                   </div>
                 </div>
                 <div className="text-gray-300 mb-6">One-time payment, lifetime access!</div>
-                <a
-                  href="https://app.blogstorm.ai/settings/subscription/black-friday"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 sm:py-4 px-6 sm:px-8 bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-black font-bold rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg text-sm sm:text-base"
-                >
-                  <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
-                  Launch with Us Now
-                  <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
+                <div className="space-y-3">
+                  <a
+                    href="https://app.blogstorm.ai/settings/subscription/black-friday"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-3 sm:py-4 px-6 sm:px-8 bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-black font-bold rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg text-sm sm:text-base"
+                  >
+                    <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
+                    Launch with Us Now
+                    <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
+                  </a>
+                  <p className="text-sm text-gray-400">
+                    You'll be directed to BlogStorm's free signup page where you can access the exclusive Black Friday deal
+                  </p>
+                </div>
               </div>
 
               {/* Speed Bonuses */}

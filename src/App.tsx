@@ -11,6 +11,7 @@ import { SuccessVision } from './components/SuccessVision';
 import { ConsultationBanner } from './components/ConsultationBanner';
 import { FoundersDescription } from './components/FoundersDescription';
 import { SatisfactionGuarantee } from './components/SatisfactionGuarantee';
+import { TestimonialGrid } from './components/TestimonialGrid';
 
 function App() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -33,7 +34,7 @@ function App() {
             alt="Blogstorm.ai" 
             className="h-12 mx-auto mb-4 animate-fade-in"
           />
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-4 sm:gap-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full text-sm font-medium animate-pulse-slow">
               <Rocket className="w-4 h-4" />
               LAUNCHING NOW - BLACK FRIDAY SPECIAL
@@ -87,6 +88,8 @@ function App() {
           <ConsultationBanner />
 
           <SuccessVision />
+          
+          <TestimonialGrid />
 
           <SatisfactionGuarantee />
         </main>

@@ -15,7 +15,7 @@ import { TestimonialGrid } from './components/TestimonialGrid';
 
 function App() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const [currentFounders] = useState(8);
+  const [currentFounders] = useState(11);
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white overflow-hidden relative">

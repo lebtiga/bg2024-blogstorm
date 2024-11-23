@@ -46,7 +46,7 @@ export const SocialProof: React.FC<SocialProofProps> = ({
       <div className="glass-card p-4 rounded-xl flex items-center gap-3 bg-black/60">
         <Gift className="w-5 h-5 text-purple-400" />
         <div className="text-sm text-white">
-          Only {25 - 8} speed bonus spots remaining
+          Only {25 - currentFounders} speed bonus spots remaining
         </div>
       </div>
     </div>

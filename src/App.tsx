@@ -57,7 +57,7 @@ function App() {
               BLACK FRIDAY LIFETIME DEAL
             </div>
             <p className="text-lg text-emerald-400 mb-8">
-              🔥 {currentFounders}/100 Founders joined | 7 people claimed their spot in the last 24hrs
+              🔥 {currentFounders}/100 Founders joined
             </p>
           </div>
 

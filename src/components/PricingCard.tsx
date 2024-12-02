@@ -59,7 +59,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
           <div className="bg-gradient-to-r from-purple-600 to-pink-400 text-white px-6 py-2 rounded-full text-sm font-medium flex items-center justify-center gap-2 shadow-lg whitespace-nowrap">
             <Sparkles className="w-4 h-4" />
-            LIMITED TIME OFFER - 100 FOUNDERS ONLY
+            CYBER MONDAY OFFER - 100 FOUNDERS ONLY
             <Sparkles className="w-4 h-4" />
           </div>
         </div>
@@ -112,7 +112,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
                 <div className="text-gray-300 mb-6">One-time payment, lifetime access!</div>
                 <div className="space-y-3">
                   <a
-                    href="https://app.blogstorm.ai/settings/subscription/black-friday"
+                    href="https://app.blogstorm.ai/settings/subscription/cyber-monday"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3 sm:py-4 px-6 sm:px-8 bg-gradient-to-r from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-emerald-300 text-black font-bold rounded-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg text-sm sm:text-base"
@@ -122,7 +122,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({ currentFounders }) => 
                     <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
                   </a>
                   <p className="text-sm text-gray-400">
-                    You'll be directed to BlogStorm's free signup page where you can access the exclusive Black Friday deal
+                    You'll be directed to BlogStorm's free signup page where you can access the exclusive Cyber Monday deal
                   </p>
                 </div>
               </div>

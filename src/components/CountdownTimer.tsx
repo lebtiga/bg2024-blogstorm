@@ -11,7 +11,7 @@ export const CountdownTimer: React.FC = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const difference = new Date('2024-12-01T23:59:59').getTime() - new Date().getTime();
+      const difference = new Date('2024-12-02T23:59:59').getTime() - new Date().getTime();
       
       if (difference > 0) {
         setTimeLeft({
@@ -33,7 +33,7 @@ export const CountdownTimer: React.FC = () => {
     <div className="glass-card rounded-2xl p-6 max-w-3xl mx-auto mb-12">
       <div className="flex items-center justify-center gap-3 mb-4">
         <Clock className="w-6 h-6 text-emerald-400" />
-        <h3 className="text-xl font-semibold text-emerald-400">Black Friday Deal Ends In:</h3>
+        <h3 className="text-xl font-semibold text-emerald-400">Cyber Monday Deal Ends In:</h3>
       </div>
       
       <div className="grid grid-cols-4 gap-4 text-center">

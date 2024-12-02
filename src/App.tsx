@@ -15,7 +15,7 @@ import { TestimonialGrid } from './components/TestimonialGrid';
 
 function App() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const [currentFounders] = useState(13);
+  const [currentFounders] = useState(15);
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white overflow-hidden relative">
@@ -37,7 +37,7 @@ function App() {
           <div className="flex flex-col items-center gap-4 sm:gap-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full text-sm font-medium animate-pulse-slow">
               <Rocket className="w-4 h-4" />
-              LAUNCHING NOW - BLACK FRIDAY SPECIAL
+              LAUNCHING NOW - CYBER MONDAY SPECIAL
               <Rocket className="w-4 h-4" />
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-400 rounded-full text-sm font-medium">
@@ -54,7 +54,7 @@ function App() {
               LAUNCHING NOW
             </h1>
             <div className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-emerald-400 to-purple-400 bg-clip-text text-transparent">
-              BLACK FRIDAY LIFETIME DEAL
+              CYBER MONDAY LIFETIME DEAL
             </div>
             <p className="text-lg text-emerald-400 mb-8">
               🔥 {currentFounders}/100 Founders joined

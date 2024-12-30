@@ -17,10 +17,6 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
         image: "https://images.unsplash.com/photo-1593672755342-741a7f868732?auto=format&fit=crop&q=80&w=400&h=300",
         imageAlt: "$100 bills stack"
       },
-      bonus: {
-        name: "500 Bonus Credits for Everyone",
-        value: "$150"
-      },
       status: currentFounders >= 25 ? "Unlocked!" : `${25 - currentFounders} founders to go`
     },
     {
@@ -31,10 +27,6 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
         value: "$999",
         image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=400&h=300",
         imageAlt: "MacBook Air on desk"
-      },
-      bonus: {
-        name: "300 Bonus Credits for Everyone",
-        value: "$90"
       },
       status: currentFounders >= 50 ? "Unlocked!" : `${50 - currentFounders} founders to go`
     },
@@ -47,10 +39,6 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
         image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=400&h=300",
         imageAlt: "VR headset"
       },
-      bonus: {
-        name: "200 Bonus Credits for Everyone",
-        value: "$60"
-      },
       status: currentFounders >= 75 ? "Unlocked!" : `${75 - currentFounders} founders to go`
     },
     {
@@ -61,10 +49,6 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
         value: "$1,199",
         image: "https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&q=80&w=400&h=300",
         imageAlt: "Latest iPhone Pro"
-      },
-      bonus: {
-        name: "100 Bonus Credits for Everyone",
-        value: "$30"
       },
       status: currentFounders >= 100 ? "Unlocked!" : `${100 - currentFounders} founders to go`
     }
@@ -131,13 +115,11 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                 isUnlocked ? 'order-first' : ''
               }`}
             >
-              {/* Card */}
               <div className={`glass-card rounded-xl transition-all duration-300 ${
                 isUnlocked ? 'border-emerald-500/50 bg-black/60' : 
                 isNext ? 'border-purple-500/50 bg-black/60' : 
                 'border-gray-800 bg-black/60'
               }`}>
-                {/* Lock Badge */}
                 <div className={`absolute -top-3 -right-3 w-8 h-8 rounded-full flex items-center justify-center ${
                   isUnlocked ? 'bg-emerald-500' : 'bg-gray-800'
                 }`}>
@@ -148,7 +130,6 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                   )}
                 </div>
 
-                {/* Header */}
                 <div className="p-4 border-b border-gray-800">
                   <div className="flex items-center justify-between mb-2">
                     <div className="text-lg font-bold text-white">{milestone.count} Founders</div>
@@ -163,10 +144,8 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                   <div className="text-sm text-gray-300">{milestone.title}</div>
                 </div>
 
-                {/* Prize Content */}
                 <div className="p-4">
                   <div className="flex gap-4">
-                    {/* Prize Image */}
                     <div className="relative w-24 h-24 rounded-lg overflow-hidden">
                       <img 
                         src={milestone.prize.image} 
@@ -176,7 +155,6 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                       <div className="absolute inset-0 bg-black/40" />
                     </div>
 
-                    {/* Prize Details */}
                     <div className="flex-1">
                       <div className="flex items-start justify-between mb-2">
                         <div>
@@ -187,17 +165,13 @@ export const MilestoneTracker: React.FC<MilestoneTrackerProps> = ({ currentFound
                           isUnlocked ? 'text-emerald-400' : 'text-gray-600'
                         }`} />
                       </div>
-                      <div className="text-sm text-gray-300">
-                        + {milestone.bonus.name} ({milestone.bonus.value} value)
-                      </div>
                       <div className="text-xs text-purple-400 mt-2 bg-purple-500/10 px-2 py-1 rounded-full inline-block">
-                        One lucky founder will win the main prize!
+                        One lucky founder will win this prize!
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Hover Effect */}
                 <div className={`absolute inset-0 rounded-xl transition-opacity duration-300 opacity-0 group-hover:opacity-100 ${
                   isUnlocked ? 'bg-emerald-500/10' : 
                   isNext ? 'bg-purple-500/10' : 

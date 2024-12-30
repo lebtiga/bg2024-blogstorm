@@ -7,7 +7,7 @@ const TESTIMONIALS = [
     quote: "BlogStorm has been an absolute game changer for automating semantic content and intent keywords for my clients. After the helpful content update, having an 'answer engine' became crucial for site owners. BlogStorm automates this process and integrates seamlessly with WordPress sites.",
     name: "Jordan Parker",
     company: "selsius.ai",
-    image: "https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/455354226_122134214360293102_6850027882540391758_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wKL-1V77eMsQ7kNvgEqSVQb&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=AahzUegucx5Ujy7jJ1jShe-&oh=00_AYBM252GMaV8IYob129-9vY76S3CJx9Kt4LgQBwM5D6yMA&oe=67455071",
+    image: "https://media.licdn.com/dms/image/v2/D4E03AQE2Ll8QlRlQqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698439853008?e=1741219200&v=beta&t=qcUJXdKfodqUcZPDcLnMUsB6RVaAU2Zxxwgv-IPS4VA",
     featured: true,
     highlights: ["Semantic Content", "WordPress Integration", "Answer Engine"],
     icon: <TrendingUp className="w-5 h-5" />

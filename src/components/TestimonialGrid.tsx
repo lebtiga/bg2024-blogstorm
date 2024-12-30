@@ -16,7 +16,7 @@ const TESTIMONIALS = [
     quote: "BlogStorm consistently generates high-ranking, lasting content for our clients while saving us valuable time. The constant feature updates and improvements make it even more exciting.",
     name: "Lior Manelis",
     company: "BlckPanda Creative",
-    image: "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/395552760_307496385399241_4624404199244515731_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=SNBlL0LmT7QQ7kNvgHR7H95&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&_nc_gid=AtyZ3IyDiJhnalJWSVm8-ou&oh=00_AYBkRNQprRvuyBiagTsLJPf1IMHkCKzmIsoJ7X1dJv8G6A&oe=67457710",
+    image: "https://media.licdn.com/dms/image/v2/D4E03AQHrwcB7xXGHuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712508799649?e=1741219200&v=beta&t=ntfzxU38p55anO-Z9x4zXr1a1qIDluMxhizXKx4WeiQ",
     featured: true,
     highlights: ["High-Ranking Content", "Time Savings", "Regular Updates"],
     icon: <Award className="w-5 h-5" />
@@ -25,7 +25,7 @@ const TESTIMONIALS = [
     quote: "After years of experience with various AI content tools like Jasper, SurferSEO, Frase.io, and ChatGPT, BlogStorm stands out for its affordability and ease of use. It helps me focus on profit-generating activities, and the content ranks well in the legal industry even without backlinks.",
     name: "Brian Ford",
     company: "Building Futures",
-    image: "https://scontent-ord5-3.xx.fbcdn.net/v/t1.6435-9/96378280_3241955709171564_6060178621065068544_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=r1ADQQpMUGYQ7kNvgG1Zb0P&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=Ar59TqjOQuBiWttD9S6pn3o&oh=00_AYBV7ExZswWO0gcRWDOK8GcIoYPpq16hHqSYJZrFOoKwaA&oe=6766F536",
+    image: "https://media.licdn.com/dms/image/v2/C4D03AQEFi0aD-ALLcg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1614958124384?e=1741219200&v=beta&t=X3BhcxLYJk3KXZfle8RxKI1Iggz79a84NF835t7ZcAE",
     featured: true,
     highlights: ["Affordable", "Easy to Use", "Legal Industry Success"],
     icon: <Shield className="w-5 h-5" />
@@ -33,13 +33,13 @@ const TESTIMONIALS = [
   {
     quote: "BlogStorm is the biggest ace up my sleeve.",
     name: "Riz Mo",
-    image: "https://scontent-ord5-3.xx.fbcdn.net/v/t1.6435-9/67673417_10105800085838656_3446005248315883520_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=lHXmpPc-gXUQ7kNvgFcBRdg&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=AoNRs1Zp-9uQPHLAkJKAD5p&oh=00_AYBEgGYOiR-8Bgn8hUYkm2rMGIhmAracgXeeOOXGMXFDwA&oe=6766F4F7",
+    image: "https://scontent.ford4-1.fna.fbcdn.net/v/t39.30808-6/370856081_10108877097782056_5771122233849910202_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6cJ8jMPj1ggQ7kNvgGochHd&_nc_zt=23&_nc_ht=scontent.ford4-1.fna&_nc_gid=AiMCN9fFt3izO5UeXZ-WNph&oh=00_AYCDsnwdcTaksqc2nBUqAj9xfjYFgix8QX5Z4Fkpztouqw&oe=6778E258",
     icon: <Star className="w-5 h-5" />
   },
   {
     quote: "Very smooth, very efficient and very effective!",
     name: "Randy The News Guy",
-    image: "https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/312580075_108119278774517_7839839428492900392_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=FjyOpihJh9oQ7kNvgF0ITd2&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=Aj7dW8IXTYMblhp79TX17FK&oh=00_AYBTHYtHUwKS1GrjRZJu4Bug9KELvtrEFnH6mg7Zc-dlvg&oe=67456B65",
+    image: "https://medium.com/@randy_TheNewsGuy?source=user_profile_page----------------------ca336da78515---------------",
     icon: <Users className="w-5 h-5" />
   }
 ];
